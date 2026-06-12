@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão da Lavoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌾 Previsão do Tempo na Lavoura</h1>
+
+        <div class="painel">
+            <label>Umidade do Ar:</label>
+            <input type="range" id="umidade" min="0" max="100" value="50">
+            <span id="valorUmidade">50%</span>
+
+            <label>Temperatura:</label>
+            <input type="range" id="temperatura" min="0" max="40" value="25">
+            <span id="valorTemperatura">25°C</span>
+
+            <label>Velocidade do Vento:</label>
+            <input type="range" id="vento" min="0" max="100" value="20">
+            <span id="valorVento">20 km/h</span>
+
+            <button onclick="gerarPrevisao()">Prever Chuva</button>
+        </div>
+
+        <div id="resultado" class="resultado">
+            Ajuste os indicadores e faça sua previsão.
+        </div>
+
+        <div class="pontuacao">
+            Pontos: <span id="pontos">0</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
